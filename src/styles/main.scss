@@ -1,0 +1,280 @@
+.form-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      font-size: 24px;
+      color: #333;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+  
+      div {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+  
+      label {
+        margin-bottom: 5px;
+        color: #666;
+      }
+  
+      select,
+      input[type='text'] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      input[type='checkbox'] {
+        margin-right: 10px;
+      }
+  
+      .error {
+        color: red;
+        margin-bottom: 10px;
+      }
+  
+      button {
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #333;
+        }
+      }
+    }
+  }
+  
+  .plans-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      color: #007bff;
+    }
+  
+    p {
+      color: #333;
+    }
+  }
+
+.plans-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+  
+    .back-button {
+      background: none;
+      border: none;
+      color: #007bff;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      margin-bottom: 20px;
+      color: #666;
+    }
+  
+    .plan-selection {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  
+      .plan-option {
+        flex: 1;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.2s;
+  
+        &:hover {
+          background-color: #f0f8ff;
+          border-color: #007bff;
+        }
+  
+        h3 {
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+  
+        p {
+          font-size: 14px;
+          color: #333;
+        }
+      }
+  
+      .plan-option:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  
+    .plan-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+  
+      .plan-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        position: relative;
+        text-align: left;
+  
+        .recommended-badge {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          background-color: #ffdf00;
+          color: #000;
+          padding: 5px 10px;
+          font-size: 12px;
+          border-radius: 3px;
+          font-weight: bold;
+        }
+  
+        h3 {
+          margin-top: 0;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          margin-bottom: 15px;
+          color: #333;
+        }
+  
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+  
+          li {
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+        }
+  
+        .select-plan-button {
+          margin-top: 15px;
+          padding: 10px 15px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.2s;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+  
+  .tabs-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    transition: color 0.2s;
+  
+    &.active {
+      color: #000;
+      border-bottom: 2px solid #007bff;
+    }
+  
+    &:hover {
+      color: #0056b3;
+    }
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+  }
+  
+  .summary-page {
+    .back-button {
+      background: none;
+      border: none;
+      color: #007bff;
+      font-size: 16px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .summary-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+      p {
+        margin: 0;
+        margin-bottom: 5px;
+        color: #333;
+      }
+  
+      h3 {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+  
+      .summary-details {
+        margin-top: 15px;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+      }
+    }
+  }
+  
